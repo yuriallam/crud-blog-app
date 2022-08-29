@@ -1,3 +1,3 @@
-import Edit from "./Edit";
+import AddEdit from "./AddEdit";
 
-export default Edit;
+export default AddEdit;
