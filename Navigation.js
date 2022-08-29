@@ -4,11 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
 
-import Home from './screens/Home/Home';
+import Home from './screens/Home';
 import Blog from './screens/Blog';
-import CreateBlog from './screens/CreateBlog';
 import configureStore from './store';
-import AddEdit from './screens/AddEdit/AddEdit';
+import AddEdit from './screens/AddEdit';
 
 const store = configureStore();
 
@@ -26,7 +25,6 @@ export default function RootNavigation() {
           <Stack.Navigator initialRouteName='Home' screenOptions={screenOptions} >
               <Stack.Screen  name='Home' component={Home} />
               <Stack.Screen  name='Blog' component={Blog} />
-              <Stack.Screen  name='CreateBlog' component={CreateBlog} />
               <Stack.Screen  name='AddEdit' component={AddEdit} />
           </Stack.Navigator>
       </NavigationContainer>
